@@ -17,4 +17,10 @@ app.get("/", (req, res) => {
   res.send("Backend is Running...");
 });
 
+const PORT = process.env.PORT || 5000
+
+app.listen(PORT, () => {
+  console.log(`server is runing in the port ${PORT}`)
+})
+
 module.exports = app;
